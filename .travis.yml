@@ -1,0 +1,16 @@
+language: minimal
+
+services: docker
+
+env:
+  - DOCKER_COMPOSE_VERSION=2.10.2
+
+install:
+  - docker-compose -f docker-compose-build.yaml build --parallel
+
+after_script:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker image push christineibrahim/udagram_reverseproxy:latest
+  - docker image push christineibrahim/udagram_apiuser:latest
+  - docker image push christineibrahim/udagram_apifeed:latest
+  - docker image push christineibrahim/udagram_frontend:latest
