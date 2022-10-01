@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
+				print('buildingg')
                 sh 'docker-compose -f docker-compose-build.yaml build --parallel'
             }
         }
