@@ -11,7 +11,7 @@ pipeline {
         }
         stage ('Login') {
             steps {
-                bat 'echo "ChIb@12345" | docker login -u "christineibrahim" --password-stdin'
+                bat 'docker login --username christineibrahim --password dckr_pat_GcIieZugRQS5m7sEpNNqFdJRFxA'
             }
         }
         stage ('Push') {
