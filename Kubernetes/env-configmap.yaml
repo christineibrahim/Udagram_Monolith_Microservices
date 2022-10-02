@@ -11,4 +11,4 @@ data:
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: helloproj3
-  URL: http://localhost:8100
+  URL: http://ad6a06d198d604486a59c0d69221c36d-1909968972.us-east-1.elb.amazonaws.com:8100
