@@ -8,4 +8,4 @@ export AWS_BUCKET=arn:aws:s3:::proj3-727690673718
 export AWS_REGION=us-east-1
 export AWS_PROFILE=default
 export JWT_SECRET=helloproj3
-export URL=http://localhost:8100
+export URL=http://ad6a06d198d604486a59c0d69221c36d-1909968972.us-east-1.elb.amazonaws.com:8100
