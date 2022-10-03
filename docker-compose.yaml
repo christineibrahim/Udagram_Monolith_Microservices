@@ -32,6 +32,8 @@ services:
       AWS_BUCKET: $AWS_BUCKET
       JWT_SECRET: $JWT_SECRET
       URL: $URL
+    volumes:
+      - $HOME/.aws/credentials:/root/.aws/credentials
   frontend:
     image: christineibrahim/udagram_frontend:latest
     ports:
