@@ -7,8 +7,8 @@ data:
   POSTGRES_PASSWORD: postgresuser
   POSTGRES_HOST: proj3-cdr.cin556icysnj.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  AWS_BUCKET: arn:aws:s3:::proj3-727690673718
+  AWS_BUCKET: proj3-727690673718
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: helloproj3
-  URL: http://ad6a06d198d604486a59c0d69221c36d-1909968972.us-east-1.elb.amazonaws.com:8100
+  URL: http://a0c5217efe9c64cf08643db9f73411b3-348737284.us-east-1.elb.amazonaws.com
