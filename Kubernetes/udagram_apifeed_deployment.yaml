@@ -18,6 +18,13 @@ spec:
       - name: backend-feed
         image: christineibrahim/udagram_apifeed:latest
         imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "2024Mi"
+            cpu: "250m"
+          limits:
+            memory: "5024Mi"
+            cpu: "500m"
         env:
         - name: URL
           valueFrom:

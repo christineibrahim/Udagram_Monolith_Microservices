@@ -18,6 +18,13 @@ spec:
       - name: backend-user
         image: christineibrahim/udagram_apiuser:latest
         imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "2024Mi"
+            cpu: "250m"
+          limits:
+            memory: "5024Mi"
+            cpu: "500m"
         env:
         - name: URL
           valueFrom:

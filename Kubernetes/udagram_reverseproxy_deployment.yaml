@@ -17,7 +17,14 @@ spec:
       containers:
       - name: reverseproxy
         image: christineibrahim/udagram_reverseproxy:latest
-        imagePullPolicy: Always
+        imagePullPolicy: Always   
+        resources:
+          requests:
+            memory: "2024Mi"
+            cpu: "250m"
+          limits:
+            memory: "5024Mi"
+            cpu: "500m"
         ports:
         - containerPort: 8080
       restartPolicy: Always
